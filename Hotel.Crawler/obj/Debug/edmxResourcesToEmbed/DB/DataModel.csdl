@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="HotelSet" EntityType="DataModel.Hotel" />
+    <EntitySet Name="RoomSet" EntityType="DataModel.Room" />
+    <EntitySet Name="CitySet" EntityType="DataModel.City" />
+    <AssociationSet Name="HotelRoom" Association="DataModel.HotelRoom">
+      <End Role="Hotel" EntitySet="HotelSet" />
+      <End Role="Room" EntitySet="RoomSet" />
+    </AssociationSet>
+    <AssociationSet Name="CityHotel" Association="DataModel.CityHotel">
+      <End Role="City" EntitySet="CitySet" />
+      <End Role="Hotel" EntitySet="HotelSet" />
+    </AssociationSet>
+    <EntitySet Name="OrderSet" EntityType="DataModel.Order" />
+    <EntitySet Name="GuestSet" EntityType="DataModel.Guest" />
+  </EntityContainer>
+  <EntityType Name="Hotel">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Location" Type="String" Nullable="false" />
+    <Property Name="Comments" Type="String" Nullable="false" />
+    <NavigationProperty Name="Rooms" Relationship="DataModel.HotelRoom" FromRole="Hotel" ToRole="Room" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoomNo" Type="String" Nullable="false" />
+    <Property Name="Level" Type="String" Nullable="false" />
+    <Property Name="Price" Type="String" Nullable="false" />
+    <Property Name="HotelId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" Nullable="false" />
+    <Property Name="ProvinceID" Type="String" Nullable="false" />
+    <NavigationProperty Name="Hotels" Relationship="DataModel.CityHotel" FromRole="City" ToRole="Hotel" />
+  </EntityType>
+  <Association Name="HotelRoom">
+    <End Type="DataModel.Hotel" Role="Hotel" Multiplicity="1" />
+    <End Type="DataModel.Room" Role="Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CityHotel">
+    <End Type="DataModel.City" Role="City" Multiplicity="1" />
+    <End Type="DataModel.Hotel" Role="Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hotel">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="Guest">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+</Schema>
