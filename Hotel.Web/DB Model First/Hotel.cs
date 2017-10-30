@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hotel.Web.DB
+namespace Hotel.Web.DB_Model_First
 {
     using System;
     using System.Collections.Generic;
@@ -24,7 +24,6 @@ namespace Hotel.Web.DB
         public string Name { get; set; }
         public string Location { get; set; }
         public string Comment { get; set; }
-        public string InageInfo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Room> Rooms { get; set; }

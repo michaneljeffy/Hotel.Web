@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hotel.Web.DB
+namespace Hotel.Web.DB_Model_First
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class hotelEntities : DbContext
+    public partial class localhost : DbContext
     {
-        public hotelEntities()
-            : base("name=hotelEntities")
+        public localhost()
+            : base("name=localhost")
         {
         }
     

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hotel.Web.DB
+namespace Hotel.Web.DB_Model_First
 {
     using System;
     using System.Collections.Generic;
@@ -15,8 +15,9 @@ namespace Hotel.Web.DB
     public partial class Room
     {
         public int Id { get; set; }
-        public string Level { get; set; }
-        public string Price { get; set; }
         public int HotelId { get; set; }
+        public string RoomNo { get; set; }
+        public string Level { get; set; }
+        public string Status { get; set; }
     }
 }

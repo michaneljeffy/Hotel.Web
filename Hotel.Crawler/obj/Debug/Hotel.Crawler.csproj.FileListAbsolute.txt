@@ -23,3 +23,31 @@ D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\zh-Hans\EntityFramewo
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.dll
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.pdb
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.csprojResolveAssemblyReference.cache
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Hotel.Crawler.dll.config
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Hotel.Crawler.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Hotel.Crawler.pdb
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\AngleSharp.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Common.Logging.Core.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Common.Logging.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\EntityFramework.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\EntityFramework.SqlServer.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\MySql.Data.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Quartz.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\AngleSharp.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Common.Logging.pdb
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Common.Logging.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Common.Logging.Core.pdb
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Common.Logging.Core.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\EntityFramework.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\EntityFramework.SqlServer.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.pdb
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Quartz.pdb
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\Quartz.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.dll
+D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.pdb
+D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.csprojResolveAssemblyReference.cache

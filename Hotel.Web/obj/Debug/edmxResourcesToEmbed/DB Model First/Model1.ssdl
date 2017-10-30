@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="hotelModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="hotelModelStoreContainer">
+    <EntitySet Name="HotelSet" EntityType="hotelModel.Store.HotelSet" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RoomSet" EntityType="hotelModel.Store.RoomSet" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="HotelRoom" Association="hotelModel.Store.HotelRoom">
+      <End Role="Hotel" EntitySet="HotelSet" />
+      <End Role="Room" EntitySet="RoomSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="HotelSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="longtext" Nullable="false" />
+    <Property Name="Location" Type="longtext" Nullable="false" />
+    <Property Name="Comment" Type="longtext" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RoomSet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HotelId" Type="int" Nullable="false" />
+    <Property Name="RoomNo" Type="longtext" Nullable="false" />
+    <Property Name="Level" Type="longtext" Nullable="false" />
+    <Property Name="Status" Type="longtext" Nullable="false" />
+  </EntityType>
+  <Association Name="HotelRoom">
+    <End Role="Hotel" Type="hotelModel.Store.HotelSet" Multiplicity="1" />
+    <End Role="Room" Type="hotelModel.Store.RoomSet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Hotel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

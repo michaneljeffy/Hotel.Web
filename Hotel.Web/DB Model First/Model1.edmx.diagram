@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="60c453c8818e474ba595966e1d99444d" Name="Diagram1" >
-        <EntityTypeShape EntityType="hotelModel.Hotel" Width="1.5" PointX="1" PointY="0.625" />
-        <EntityTypeShape EntityType="hotelModel.Room" Width="1.5" PointX="4" PointY="1" />
+      <Diagram DiagramId="b43895adbde2412d9b95411da4e7b84b" Name="Diagram1" >
+        <EntityTypeShape EntityType="hotelModel.Hotel" Width="1.5" PointX="1.75" PointY="2.375" />
+        <EntityTypeShape EntityType="hotelModel.Room" Width="1.5" PointX="3.875" PointY="2.375" />
         <AssociationConnector Association="hotelModel.HotelRoom" />
       </Diagram>
     </edmx:Diagrams>

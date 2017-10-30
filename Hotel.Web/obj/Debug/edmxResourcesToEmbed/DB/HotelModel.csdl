@@ -7,6 +7,17 @@
       <End Role="Hotel" EntitySet="HotelSet" />
       <End Role="Room" EntitySet="RoomSet" />
     </AssociationSet>
+    <EntitySet Name="OrderSet" EntityType="hotelModel.Order" />
+    <EntitySet Name="UserSet" EntityType="hotelModel.User" />
+    <EntitySet Name="CitySet" EntityType="hotelModel.City" />
+    <AssociationSet Name="CityHotel" Association="hotelModel.CityHotel">
+      <End Role="City" EntitySet="CitySet" />
+      <End Role="Hotel" EntitySet="HotelSet" />
+    </AssociationSet>
+    <AssociationSet Name="UserOrder" Association="hotelModel.UserOrder">
+      <End Role="User" EntitySet="UserSet" />
+      <End Role="Order" EntitySet="OrderSet" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Hotel">
     <Key>
@@ -18,6 +29,7 @@
     <Property Name="Comment" Type="String" Nullable="false" />
     <Property Name="InageInfo" Type="String" Nullable="false" />
     <NavigationProperty Name="Rooms" Relationship="hotelModel.HotelRoom" FromRole="Hotel" ToRole="Room" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="Room">
     <Key>
@@ -37,6 +49,58 @@
       </Principal>
       <Dependent Role="Room">
         <PropertyRef Name="HotelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="String" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" />
+    <Property Name="CreateAt" Type="String" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="OrderDate" Type="String" Nullable="false" />
+    <Property Name="LiveDate" Type="String" Nullable="false" />
+    <NavigationProperty Name="Orders" Relationship="hotelModel.UserOrder" FromRole="User" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProvinceID" Type="String" Nullable="false" />
+    <NavigationProperty Name="Hotel" Relationship="hotelModel.CityHotel" FromRole="City" ToRole="Hotel" />
+  </EntityType>
+  <Association Name="CityHotel">
+    <End Type="hotelModel.City" Role="City" Multiplicity="1" />
+    <End Type="hotelModel.Hotel" Role="Hotel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Hotel">
+        <PropertyRef Name="CityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UserOrder">
+    <End Type="hotelModel.User" Role="User" Multiplicity="1" />
+    <End Type="hotelModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
