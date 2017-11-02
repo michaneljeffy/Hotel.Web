@@ -11,7 +11,15 @@ namespace Hotel.Web.DB
 
         public string Name { get; set; }
 
-        public string Location { get; set; }
+        public string Location1 { get; set; }
+
+        public string Location2 { get; set; }
+
+        public double Point { get; set; }
+
+        public int CommonPrice { get; set; }
+
+        public string PointFrom { get; set; }
 
         public string Comment { get; set; }
     }

@@ -211,3 +211,7 @@ D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.Data.dll
 D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.WebData.dll
 D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.WebData.xml
 D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.Data.xml
+D:\.NET FrameWork Studay\Hotel.Web\Hotel.Web\bin\WebMatrix.Data.dll
+D:\.NET FrameWork Studay\Hotel.Web\Hotel.Web\bin\WebMatrix.WebData.dll
+D:\.NET FrameWork Studay\Hotel.Web\Hotel.Web\bin\WebMatrix.Data.xml
+D:\.NET FrameWork Studay\Hotel.Web\Hotel.Web\bin\WebMatrix.WebData.xml

@@ -32,16 +32,26 @@ namespace Hotel.Crawler.Crawler
             htmlDoc.GetElementById("");
         }
 
+        List<string> selctors = new List<string>() { "span.brief_comment_text", "span.price" };
         public static async Task GetHotelInfo()
         {
+            //这里可以用builder模式
             var config = Configuration.Default.WithDefaultLoader();
             var address = "http://hotels.ctrip.com/";
             var document = await BrowsingContext.New(config).OpenAsync(address);
             var cellSelector = "ul.searchresult_info";
             var cells = document.QuerySelectorAll(cellSelector);
-            var HotelNameSelectot = "a.hotel_name";
-            var cells2 = document.QuerySelectorAll(HotelNameSelectot);
+            var hotelNameSelectot = "a.hotel_name";
+            cells = document.QuerySelectorAll(hotelNameSelectot);
+            var hotelNames = cells.Select(m=>m.TextContent);
 
+            var hotelLocationSelector = "a.search_hotel_zone";
+            cells = document.QuerySelectorAll(hotelLocationSelector);
+            var locations = cells.Select(m => m.TextContent);
+
+            var pointSelector = "hotel_comment J_trace_hotHotel";
+            cells = document.QuerySelectorAll(pointSelector);
+            var pointComments = cells.Select(m=>m.TextContent);
         }
     }
 }
