@@ -16,7 +16,7 @@ namespace Hotel.Web
     {
         protected void Application_Start()
         {
-            Hotel.Web.DB.Hotel htl = new Hotel.Web.DB.Hotel() { Id = 1, Name = "123", Location = "hangzhou", Comment = "good" };
+           /* Hotel.Web.DB.Hotel htl = new Hotel.Web.DB.Hotel() { Id = 1, Name = "123", Location = "hangzhou", Comment = "good" };
 
             using (var db = new Hotel.Web.DB.HotelDbContext())
             {
@@ -25,7 +25,7 @@ namespace Hotel.Web
             }
 
             Console.WriteLine("添加成功");
-            Console.ReadKey();
+            Console.ReadKey();*/
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

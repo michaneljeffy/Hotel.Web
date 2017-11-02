@@ -49,7 +49,7 @@ D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\zh-Hans\EntityFramework.resourc
 D:\MVC Project\Hotel.Web\Hotel.Crawler\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.dll
 D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.pdb
-D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.csprojResolveAssemblyReference.cache
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.dll
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.pdb
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.xml
+D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.csprojResolveAssemblyReference.cache

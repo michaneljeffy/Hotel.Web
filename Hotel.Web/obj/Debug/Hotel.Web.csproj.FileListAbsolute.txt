@@ -207,3 +207,7 @@ D:\MVC Project\Hotel.Web\Hotel.Web\bin\zh-Hans\System.Web.WebPages.Razor.resourc
 D:\MVC Project\Hotel.Web\Hotel.Web\obj\Debug\Hotel.Web.csprojResolveAssemblyReference.cache
 D:\MVC Project\Hotel.Web\Hotel.Web\obj\Debug\Hotel.Web.dll
 D:\MVC Project\Hotel.Web\Hotel.Web\obj\Debug\Hotel.Web.pdb
+D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.Data.dll
+D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.WebData.dll
+D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.WebData.xml
+D:\MVC Project\Hotel.Web\Hotel.Web\bin\WebMatrix.Data.xml
