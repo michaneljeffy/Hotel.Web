@@ -9,6 +9,7 @@ using System.Web.Routing;
 using Hotel.Crawler;
 using System.Threading.Tasks;
 using Hotel.Web.DB;
+using Hotel.Crawler.Crawler;
 
 namespace Hotel.Web
 {
@@ -16,16 +17,20 @@ namespace Hotel.Web
     {
         protected void Application_Start()
         {
-           /* Hotel.Web.DB.Hotel htl = new Hotel.Web.DB.Hotel() { Id = 1, Name = "123", Location = "hangzhou", Comment = "good" };
+            /* Hotel.Web.DB.Hotel htl = new Hotel.Web.DB.Hotel() { Id = 1, Name = "123", Location = "hangzhou", Comment = "good" };
 
-            using (var db = new Hotel.Web.DB.HotelDbContext())
-            {
-                db.Hotels.Add(htl);
-                db.SaveChanges();
-            }
+             using (var db = new Hotel.Web.DB.HotelDbContext())
+             {
+                 db.Hotels.Add(htl);
+                 db.SaveChanges();
+             }
 
-            Console.WriteLine("添加成功");
-            Console.ReadKey();*/
+             Console.WriteLine("添加成功");
+             Console.ReadKey();*/
+
+            Crawler.Crawler.IndexCrawler.GetHotelInfo();
+            // t.Start();
+            //t.Wait();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

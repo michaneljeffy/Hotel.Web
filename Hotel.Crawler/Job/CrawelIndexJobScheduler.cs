@@ -22,7 +22,7 @@ namespace Hotel.Crawler.Job
                 t.WithIntervalInSeconds(5)
                  .RepeatForever())
                  .Build();
-
+            
             scheduler.ScheduleJob(job, trigger);
         }
     }

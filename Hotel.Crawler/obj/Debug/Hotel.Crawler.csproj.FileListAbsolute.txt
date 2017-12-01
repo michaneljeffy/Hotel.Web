@@ -54,3 +54,5 @@ D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.pdb
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\HtmlAgilityPack.xml
 D:\MVC Project\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.csprojResolveAssemblyReference.cache
 D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\obj\Debug\Hotel.Crawler.csprojResolveAssemblyReference.cache
+D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\Newtonsoft.Json.dll
+D:\.NET FrameWork Studay\Hotel.Web\Hotel.Crawler\bin\Debug\Newtonsoft.Json.xml
