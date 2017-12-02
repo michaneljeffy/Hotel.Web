@@ -16,8 +16,8 @@ namespace Hotel.Web.Job
         public IJob GetJobInstance()
         {
             var job = new CrawlerIndexJob();
-            var jobContext = new IJobExecutionContext();
-            job.Execute();
+            IJobExecutionContext jobContext = ;
+            job.Execute(jobContext);
             job.JobFinishedEvent += Job_JobFinishedEvent;
             return job;
         }
